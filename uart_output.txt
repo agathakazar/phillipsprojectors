@@ -1,0 +1,681 @@
+>: test ddr
+msdly:0-----fail
+msdly:1-----fail
+msdly:2-----fail
+msdly:3-----fail
+msdly:4-----fail
+msdly:5-----fail
+msdly:6-----fail
+msdly:7-----fail
+msdly:8-----fail
+msdly:9-----ok
+msdly:a-----ok
+msdly:b-----ok
+msdly:c-----ok
+msdly:d-----ok
+msdly:e-----ok
+msdly:f-----ok
+msdly:10-----ok
+msdly:11-----ok
+msdly:12-----ok
+msdly:13-----ok
+msdly:14-----ok
+msdly:15-----ok
+msdly:16-----ok
+msdly:17-----ok
+msdly:18-----ok
+msdly:19-----fail
+msdly:1a-----fail
+msdly:1b-----fail
+msdly:1c-----fail
+msdly:1d-----fail
+msdly:1e-----fail
+final msdly:10
+msldyreg:5101a
+Enter load_brec
+over ecc error!
+over ecc error!
+over ecc error!
+over ecc error!
+over ecc error!
+over ecc error!
+over ecc error!
+over ecc error!
+over ecc error!
+Found brec at block4...
+PAGESIZE=4096
+PAGE_CNT=256
+SECT_CNT=8
+Start block :4,ECCCTL:0x219
+2 ECC at offset 32
+2 ECC at offset 40
+1 ECC at offset 44
+1 ECC at offset 46
+1 ECC at offset 52
+1 ECC at offset 64
+1 ECC at offset 68
+1 ECC at offset 70
+2 ECC at offset 96
+1 ECC at offset 98
+3 ECC at offset 100
+1 ECC at offset 104
+1 ECC at offset 106
+1 ECC at offset 110
+1 ECC at offset 122
+1 ECC at offset 128
+1 ECC at offset 130
+2 ECC at offset 132
+2 ECC at offset 136
+2 ECC at offset 138
+1 ECC at offset 142
+1 ECC at offset 144
+1 ECC at offset 162
+1 ECC at offset 164
+1 ECC at offset 166
+1 ECC at offset 168
+4 ECC at offset 170
+2 ECC at offset 172
+1 ECC at offset 192
+1 ECC at offset 196
+1 ECC at offset 200
+3 ECC at offset 202
+1 ECC at offset 206
+2 ECC at offset 224
+1 ECC at offset 226
+1 ECC at offset 228
+2 ECC at offset 230
+2 ECC at offset 234
+1 ECC at offset 238
+------BREC OKAY--------
+USE_UART = 0
+
+
+***AL1213, AM0,brec.bin Ver Dec 18 2014 Tim:17:40:11,NAND***
+chipinfo: 0xb4045790
+MU_REG1:0x00002600
+MU_REG2:0x00000000
+MU_REG1:0x00003e00
+MU_REG2:0x00003e00
+MU_REG1:0x00003e00
+MU_REG2:0x00003e00
+CMU_COREPLL [b0010000]: 388d94b
+CMU_BUSCLK [b001000c]: 29004388
+SDR_CTL [b0070000]: 30166
+SDR_CMD [b007000c]: 0
+SDR_TIMING [b0070030]: 25aa7377
+SDR_RFSH [b0070014]: d00
+SDR_EN [b0070008]: 1
+SDR_MODE [b0070018]: 521
+SDR_CLKDLY [b007005c]: 10a0000
+SDR_MSTDLY [b0070060]: 5101a
+SDR_LATENCY [b0070058]: 8000605
+--------- getcorepll() COREPLL val:492
+##Set nand Flash:32800 Khz##
+##CMU_COREPLL:0x388d94b ,NAND_CTL: 0x48901
+###CMU_NANDCLK:0x50e,CLKCTL:0x9,NANDCTL48901###
+###NandDMAChannel:0 ###
+###4.User_Data_2Byte:0
+###5.EIP_IRQ_MODE:1
+###6.TEST_RB_CTL:0
+##7.SPECIAL_DMA_Test:0
+##8.PageBCH24 Read:0,Write:0
+##9.PageBCH8 Read:0,Write:0
+##10.pseudoNoise:0
+mode32:0x608401a4,mode8:0x608001a4
+mode32:0x1a46084,mode8:0x1a46080
+[INIT] INIT_CreateBlkTbls() enter.
+
+====22 boot nand Flash CHIPID:0x4a04682c ====
+Flash ChipNo:0 CHIPID:4a04682c
+Flash ChipNo:1 CHIPID:0
+
+===Set:0x4000, NAND_ECCCTL:0x1,
+AM1213 Set ECC type BCH24
+NAND_ECCCTL:0x219 ==
+
+--------- getcorepll() COREPLL val:492
+CMU_COREPLL:0x388d94b
+###7,9,492Mhz,20MHz,20500Khz ###
+###Set BMA:82Mhz###
+###CMU_NANDCLK:0x507,CLKCTL:0x9,NANDCTL48900###
+
+INIT_DBG: ================NAND STORAGE INFOR================
+INIT_DBG:     ChipEnableInfo is:0x1
+INIT_DBG:     ChipCnt        is:0x1
+INIT_DBG:     BankCntPerChip is:0x1
+INIT_DBG:     DieCntPerChip  is:0x1
+INIT_DBG:     PlaneCntPerDie is:0x1
+INIT_DBG:     SectorNumPerPage  is:0x8
+INIT_DBG:     PageNumPerPhyBlk  is:0x100
+INIT_DBG:     TotalBlkNumPerDie is:0x1000
+INIT_DBG:     OperationOpt is:0x4000
+INIT_DBG:     FrequencePar is:0x14
+INIT_DBG:     Reclaim is:6
+INIT_DBG:     SpareSize is:224
+INIT_DBG:     NandChipId   is:0x4a04682c
+INIT_DBG: ====================================================
+
+INIT_DBG: ================LOGIC ORGANIZE INFO=================
+INIT_DBG:     DataBlkNumPerZone  is:0x3b0
+INIT_DBG:     PageNumPerLogicBlk is:0x100
+INIT_DBG:     SectorNumPerLogicPage is:0x8
+INIT_DBG:     ZoneNumPerDie      is:0x4
+INIT_DBG: ====================================================
+
+INIT_DBG: ===============SPECICAL CMMOND INFO=================
+INIT_DBG:     MultiProgCmd         is:0x11, 0x80
+INIT_DBG:     MultiCopyReadCmd     is:0x0, 0x0, 0x35
+INIT_DBG:     MultiCopyProgCmd     is:0x85, 0x11, 0x80
+INIT_DBG:     MultiBlkAddrOffset   is:0x1
+INIT_DBG:     BadBlkFlagPst        is:0x1
+INIT_DBG:     ReadMultiOpStatusCmd is:0x70
+INIT_DBG:     InterChip0StatusCmd  is:0x78
+INIT_DBG:     InterChip1StatusCmd  is:0x78
+INIT_DBG: =====================================================
+
+INIT_DBG: ===============Sector Bimmap=================
+INIT_DBG 1.===>Sector_BitmapBBF:0xf
+INIT_DBG 2.===>Sector_BitmapSpare:0x3f
+INIT_DBG 3.===>USER_DataByte:0x2
+INIT_DBG 4.===>USER_SectorCnt:0x3
+INIT_DBG 5.===>TOTAL_SPAREDATA:6
+INIT_DBG 6.===>Single_BitmapSpare:3f
+INIT_DBG: =====================================================
+
+TOTAL_BANKS          1
+DIENUM_IN_FLASH      1
+ZONENUM_PER_DIE      4
+SUBLK_PER_DIE        4096
+PAGES_PER_SUBLK      256
+MULTI_PLANE_SUPPORT  0
+DIE_FIRST_SUBLK_NUM  8
+###NandDevInfo.PhyCache :8081a220 ,size:4096
+###GPageBuf:0x80819210
+[SCAN] ScanSearchZoneTbls: (DieNo: 0) enter.
+ZoneTblStartPage:128
+ScanSearchZoneTbls: [SCAN] Found valid zone table 0 for die 0 at block 8, page 128.
+ZoneTblStartPage:0
+ScanSearchZoneTbls: [SCAN] Found valid zone table 1 for die 0 at block 9, page 0.
+ZoneTblStartPage:0
+ScanSearchZoneTbls: [SCAN] Found valid zone table 2 for die 0 at block 10, page 0.
+ZoneTblStartPage:4
+ScanSearchZoneTbls: [SCAN] Found valid zone table 3 for die 0 at block 11, page 4.
+[SCAN] ScanSearchZoneTbls: (DieNo: 0) out, ret 0
+[INIT] INIT_CreateBlkTbls() out, ret 0.
+##1.Reclaim: 6,6,brecsize:128KB
+##2.Read Super:1, Readclaim:1
+##3.Write Super:0, Wearleveling:1
+##4.ECC_reclaim,1,overecc:1
+##5.DataBlk:944,MultiPlane:0
+##6.PageCache:0x80819210,8
+##7.NandDevInfo.PhyCache:0x8081a220:
+FlashReadBuf:0x8081d0b0,FlashReadFileBuf:0x8081d2b0
+FlashBuf_S:0x8081d4b0,D:0x8081f4b0
+
++++1> SystemSize:4400, 1:4400,2:0,3:0,4:10000, 5:0,6:0,7:0 +++
+
+DIRItemsCheckSum:0xca8cf8fb,0xca8cf8fb
+
+#get file :2,name:RECOVER BIN,res:1#
+USE_UART = 0
+---- bootdisplay test ddr cap 128M
+640 360
+CMU_LCDPLL:157
+CMU_DISPLAYCLK:783
+clock rate:127Mhz  divider:4
+de input pixel format:5
+runto:301
+runto:304
+runto:309
+global_data.pic_data_addr:a5800000
+exit display boot pic
+1+:RECOVER BIN,      10,    7600,59d3160b +
+1+:WELCOME BIN,      4b,   70a00,d6a59d05 +
+1+:COVER   BIN,     3d0,   ea800, ec64ea8 +
+1+:FAILED  BIN,     b24,   ea800,79c5246e +
+1+:SUCCESS BIN,    1278,   ea800,be2766d9 +
+1+:FMCOVER BIN,    19cc,    ea00,de5b5e21 +
+1+:LCM     BIN,    1a41,     200,2e769945 +
+1+:BACKLIGHBIN,    1a42,     200,457a1265 +
+1+:GAMMA   BIN,    1a43,     600,3117a936 +
+1+:GPIO    BIN,    1a46,     200,9d414921 +
+1+:SYSCFG  SYS,    1a47,  333200,5ef68f96 +
+1+:INITRD  DAT,    33e0,  200000,d8ad5fdd +
+1+:BOOTARG TXT,    43e0,     200,808766ec +
+system_code_check end 11406ms 0
+system_code_check retrun 0
+CheckSum:$4790,d,d
+###MBRC_Whole:13, code:12,55aa4790!####
+CheckSum:$4790,d,d
+CheckSum:$4790,d,d
+CheckSum:$4790,d,d
+mbrc_test_repair OK
+CheckSum:$9995,100,100
+CheckSum:$9995,100,100
+CheckSum:$9995,100,100
+CheckSum:$9995,100,100
+brec_test_repair OK
+SYSCFG  SYS
+0: Size:00333200 offset:00001a47
+INITRD  DAT
+1: Size:00200000 offset:000033e0
+BOOTARG TXT
+2: Size:00000200 offset:000043e0
+No any more files
+### new read mode fix ###
+Kernel command line: rd_start=0x80400000 rd_size=0x00200000 reserved_mem=64M root=/dev/ram0 rw init=/linuxrc AM7X_PARTS=rootfs,user1,cdrom,bak,vram,udisk AM7X_ROOTFS=ext2 console=ttyS0,115200n8
+
+Load 3355136 bytes (6553 sects) from 0x00001a47
+BREC#syscfg.sys is loaded at 80003000, checksum32=0x5ef68f96
+Load 2097152 bytes (4096 sects) from 0x000033e0
+BREC#initrd.dat is loaded at 80400000, checksum32=0xd8ad5fdd
+./../../../brec/nand_driver_entry.c-89 Brec nand exit!!
+KERNEL checksum: 0x5ef68f96
+INITRD checksum: 0xd8ad5fdd
+Kernel command line: rd_start=0x80400000 rd_size=0x00200000 reserved_mem=64M root=/dev/ram0 rw init=/linuxrc AM7X_PARTS=rootfs,user1,cdrom,bak,vram,udisk AM7X_ROOTFS=ext2 console=ttyS0,115200n8
+Kernel command line length: 173
+rd_start: 0x80400000
+CHIP_INFO1: 0xb4045790
+CHIP_INFO2: 0xb4045790
+
+
+Starting linux kernel at 0x80003400
+board init
+@cmdline length: 173@chipinfo: 0xb4045790
+AM: external initramfs
+Linux version 2.6.27.29 (kopal.guo@srv-szmicro-sw) (gcc version 4.3.3 (Sourcery G++ Lite 4.3-154) ) #198 PREEMPT Wed Nov 11 15:20:23 CST 2015
+
+AM7X LINUX started...
+console [early0] enabled
+CPU revision is: 5501964c (MIPS 24K)
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+Initial ramdisk at: 0x80400000 (2097152 bytes)
+Zone PFN ranges:
+  Normal   0x00000000 -> 0x00008000
+Movable zone start PFN for each node
+early_node_map[1] active PFN ranges
+    0: 0x00000000 -> 0x00008000
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Kernel command line: rd_start=0x80400000 rd_size=0x00200000 reserved_mem=64M root=/dev/ram0 rw init=/linuxrc AM7X_PARTS=rootfs,user1,cdrom,bak,vram,udisk AM7X_ROOTFS=ext2 console=ttyS0,115200n8
+Primary instruction cache 16kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 16kB, 4-way, VIPT, no aliases, linesize 32 bytes
+Writing ErrCtl register=0006615f
+Readback ErrCtl register=0006615f
+PID hash table entries: 512 (order: 9, 2048 bytes)
+<3>am: membase@0xb0160000, irq20
+co0, baud=115200, parity=n, bits=8, flow=n
+console handover: boot [early0] -> real [ttyS0]
+printk okay!
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 58212k/131072k available (2602k kernel code, 72808k reserved, 524k data, 152k init, 0k highmem)
+SLUB: Genslabs=6, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Calibrating delay loop... 321.53 BogoMIPS (lpj=643072)
+Mount-cache hash table entries: 512
+net_namespace: 588 bytes
+NET: Registered protocol family 16
+SCSI subsystem initialized
+usbcore: registered new device driver usb
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP reno registered
+NET: Registered protocol family 1
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 2048k freed
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 117
+io scheduler noop registered
+io scheduler anticipatory registered (default)
+io scheduler deadline registered
+io scheduler cfq registered
+ActionsMicro AM7XXX serial driver version 0.14
+<3>am: membase@0xb0160000, irq20
+ttyS0 at MMIO 0x10160000 (irq = 20) is a AM
+<3>am: membase@0xb0190020, irq19
+ttyS1 at MMIO 0x10190020 (irq = 19) is a AM
+brd: module loaded
+loop: module loaded
+Driver 'sd' needs updating - please use bus_type methods
+Driver 'sr' needs updating - please use bus_type methods
+
+&&&& fun:init_mtd,  389&&&&
+
+&&&& fun:register_mtd_user,  141&&&&
+usbmon: debugfs is not available
+rtc-am7xxx rtc-am7xxx.0: rtc core: registered rtc-am7xxx as rtc0
+nf_conntrack version 0.5.0 (2048 buckets, 8192 max)
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+NET: Registered protocol family 17
+ieee80211: 802.11 data/management/control stack, git-1.1.13
+ieee80211: Copyright (C) 2004-2005 Intel Corporation <jketreno@linux.intel.com>
+rtc-am7xxx rtc-am7xxx.0: hctosys: invalid date/time
+blkdev_open
+RAMDISK: ext2 filesystem found at block 0
+RAMDISK: Loading 2048KiB [1 disk] into ram disk... done.
+VFS: Mounted root (ext2 filesystem).
+kernel_init:prepare_namespace ok
+prom_free_prom_memory okay
+Freeing unused kernel memory: 152k freed
+write 48403 to b0160000
+COM0 start up!
+No such file: /bin/init
+init_post:ramdisk_execute_command:<NULL>
+init_post:execute_command:/linuxrc
+
+init_am7x_nftl: CHIPINFO:  0xb4045790
+MU_REG1:0x00003e00
+MU_REG2:0x00003e00
+--------- getcorepll() COREPLL val:492
+##Set nand Flash:32800 Khz##
+##CMU_COREPLL:0x388d94b ,NAND_CTL: 0x48901
+###CMU_NANDCLK:0x50e,CLKCTL:0x9,NANDCTL48901###
+###NandDMAChannel:0 ###
+###4.User_Data_2Byte:0
+###5.EIP_IRQ_MODE:1
+###6.TEST_RB_CTL:0
+##7.SPECIAL_DMA_Test:0
+##8.PageBCH24 Read:0,Write:0
+##9.PageBCH8 Read:0,Write:0
+##10.pseudoNoise:0
+mode32:0x608401a4,mode8:0x608001a4
+mode32:0x1a46084,mode8:0x1a46080
+
+====22 boot nand Flash CHIPID:0x4a04682c ====
+Flash ChipNo:0 CHIPID:4a04682c
+Flash ChipNo:1 CHIPID:0
+
+===Set:0x4000, NAND_ECCCTL:0x1,
+AM1213 Set ECC type BCH24
+NAND_ECCCTL:0x219 ==
+
+--------- getcorepll() COREPLL val:492
+####run to :Set_TestBuf,83ec0c00###
+ScanSearchZoneTbls: [SCAN] Found valid zone table 0 for die 0 at block 8, page 128.
+ScanSearchZoneTbls: [SCAN] Found valid zone table 1 for die 0 at block 9, page 0.
+ScanSearchZoneTbls: [SCAN] Found valid zone table 2 for die 0 at block 10, page 0.
+ScanSearchZoneTbls: [SCAN] Found valid zone table 3 for die 0 at block 11, page 4.
+##1.Reclaim: 6,6,brecsize:128KB
+##2.Read Super:1, Readclaim:1
+##3.Write Super:1, Wearleveling:1
+##4.ECC_reclaim,1,overecc:1
+##5.DataBlk:944,MultiPlane:0
+##6.PageCache:0xa3c0a000,8
+##7.NandDevInfo.PhyCache:0xa3e7c000:
+
+===NO:    0,Read Zone : 0, Blk:8,Pge:128===
+kernel capacity is:0x10000 sectors
+Partinfo:AM7X_PARTS=rootfs,user1,cdrom,bak,vram,udisk
+NO:0,rootfs offset:80,Cap:47800 143MB
+NO:1,user1 offset:47880,Cap:f000 30MB
+NO:2,cdrom offset:56880,Cap:3000 6MB
+NO:3,bak offset:59880,Cap:3000 6MB
+NO:4,vram offset:5c880,Cap:2000 4MB
+NO:5,udisk offset:5e880,Cap:6f1780 3554MB
+==nand_get_cap:750000,3744MB==
+NFTL: whole cap 0x750000
+NFTL: using C:1872 H:128 S:32 (== 0x750000 sects)
+
+### CmpBuf:0x83cb0000###
+==nand_get_cap:750000,3744MB==
+ nand_block:<6>Enter My PARTITION PARSER
+sector_size=1
+start: 0x00000080, size:0x00047800
+ nand_block1<6>start: 0x00047880, size:0x0000f000
+ nand_block2<6>start: 0x00056880, size:0x00003000
+ nand_block3<6>start: 0x00059880, size:0x00003000
+ nand_block4<6>start: 0x0005c880, size:0x00002000
+ nand_block5<6>start: 0x0005e880, size:0x006f1780
+ nand_block6<6>start: 0x00000000, size:0x00000000
+
+***install ntfl block init OK***
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!
+fsck.fat -a vram
+blkdev_open
+>>>>>>vram_check_result=/dev/partitions/vram: 4 files, 25/8095 clusters
+FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!
+Root filesystem on nand
+Start AM7531 Console
+>>>>>> check user1
+in child process
+ext2fs_check_if_mount: Can't check if filesystem is mounted due to missing mtab file while determining whether /dev/partitions/user1 is mounted.
+blkdev_open
+blkdev_open
+/dev/partitions/user1 was not cleanly unmounted, check forced.
+This is `config.app'
+cant open gpio device
+cant open reg device
+[am_reg_init] start!
+[am_reg_init]major =250
+set RX to GPIO
+
+----------------graphics init
+----------probe graphics
+graph_major=30
+pRTask=0x83e04000
+graph_init
+module /lib/modules/2.6.27.29/am7x_graph inserted
+/lib/modules/2.6.27.29/am7x_graph major = 30
+node /dev/graph created
+set node access to 666
+
+
+hx170dec: module license 'Proprietary' taints kernel.
+7190 kernel module sw build: 2
+hx170dec: base_port=0x10080000 irq=0
+hx170dec: Valid HW found at base 0x10080000 with ID# 0x72981010
+hx170dec: module inserted. Major = 249
+module /lib/modules/2.6.27.29/hx170dec inserted
+/lib/modules/2.6.27.29/hx170dec major = 249
+node /tmp/dev/hx170 created
+set node access to 666
+
+act_readl(GPIO_MFCTL3)=============0x7fb64ca4
+lcm probe
+stat config /mnt/vram/edid.bin fail -2
+@@@@@@@@@@@ret -2 v 0 h 0 0 0
+NOTICE:READ EDID CONFIG FILE ERROR
+stat config /am7x/sdk/easy/card.bin fail -2
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0
+CardType:3
+CFCardType:1
+SDMulitPin:1
+MSMulitPin:1
+XDMulitPin:1
+MSStandardBus:1
+CF_DataBus:1
+
+mu_reg1:0x3e00
+mu_reg2:0x3e00
+**********slot:0  Card_info**********
+         gpio Card_info
+                 det:84
+                 wp:255
+                 power:94
+         slot empty:1
+         slot change:0
+         current card type :0
+**********slot:1  Card_info**********
+         gpio Card_info
+                 det:255
+                 wp:255
+                 power:255
+         slot empty:1
+         slot change:0
+         current card type :0
+*********am_tp_init************
+@@TP_CTL-0===0x30c490
+@@TP_CTL-1===30c051
+tp lcd_width==854,lcd_height==480
+request irq ok
+input: AM TouchScreen as /class/input/input0
+input: SPI Keyboard as /class/input/input1
+/dev/partitions/user1: 579/7264 files (1.0% non-contiguous), 21473/30720 blocks
+>>start to init spi key<<
+dac init
+dac major=14, minor=0
+EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+
+Please press Enter to activate this console. am7x-cipher: module inserted. Major = 248
+creating  volume !,name :VOLUME_PicoPix, len :7
+found the old volume :PICOPIX4350
+replace with new volume: PicoPix
+GlobalValue width=848,height=480,default_color=0x0,format=5,display_mode=2
+ds_conf.input.width = 848 ds_conf.input.height = 480
+am7x_cec_init
+cec probe
+switched to unregistered logical address
+E-EDID marker not foundget physical_address error r=-22
+physical_address=0xffff logical_address=234
+am7x-cec: module inserted. Major = 247
+physical_address=0xffff logical_address=15
+net.core.rmem_max = 1024000
+normal termination
+message collector id : 721896656
+use default fui.app
+application create err == 0, msgq_id=0
+am_dac_open
+HDMI_ACTL1=0x0,
+
+HDMI_ICR=0x0,
+
+am_dac_open reg
+am_dac_release
+
+HDMI_ICR: 0x0
+sys_volume=0
+1 sys_volume=15
+am_dac_open
+HDMI_ACTL1=0x0,
+
+HDMI_ICR=0x0,
+
+DACIO_SET_VOLUME=40
+
+DAC_ANALOG=0x155524a3
+am_dac_release
+
+HDMI_ICR: 0x0
+2 sys_volume=15
+Board Power Key OFF is 0x7, ON is 60
+IR Power Key OFF is 0x8, ON is 0x19
+the file is not exist,backlight can't be set
+mempool():node:0x83480280 returning 0x84000000(size:0x3d82000),next: 0x88000000
+ ioctl  get :84000000
+  size:15746KB<7>mmap_mheap:961 pfnoff:0x0 mheap_start:0x84000000
+filepathname: /am7x/case/data/msyh.ttf
+stream->size: 22932592
+GRAPH_IOCGHBASE
+heap_base=0x3e04000
+heap_size=0x4000
+init_2d:pRTask=0x30d19000
+init_2d ok
+cb_display.put_display_task==0x41febc
+cb_display.get_current_display_addr==0x41ff30
+open calibrate file failed
+system resource init error
+swfext_album_register
+======================== KEY_VALUE=0x0  =================
+[uart_char_init]major =246
+tmp=0x10140
+[start_mstar_uart-1108]:[start_mstar_uart] fd = 10
+[__resend_thread] end
+[__uart_read] start!fd = 10, pid = 831636688
+[__uart_write] start
+ default set bri = 5
+[__decode_uart] mcu version = 1.14
+detect gpio:74 is_otg:0
+aotg usb efuse reg value:0x7f
+<am7x_uoc>@@---detect gpio pin:71
+<am7x_uoc>@@---detect gpio pin:82
+<am7x_uoc>@@--- am7x_uoc: probe success!
+am7x_uoc: probe success!
+[0x0] --------------This is for this case R30!
+[3.827:ezFuiMain:965] Ok, thread(0x3252c4d0)!
+Unsupported Tag [77] Metadata
+The font[ID: 3] has layout information
+The font[ID: 29] has layout information
+strlen(buf)=======1
+buf=========1
+auto_channel_choose_flag_get======1
+[initTimer] success![4]
+=====================load   main  swf========================  [4]
+direction=====================0
+++++++++++++++++++++++++sysinfo_setgpio_for_usbswitch 3445
+sys_cfg_data.power_sleep_mode=0
+[LoadBackgroundImage]./bg/PPX2011_8.png[4]
+/quickBar_mc[5]
+[initPPX][4]
+==========DS_MAIN_YESYes[4]
+[muteStat] = false[4]
+[showEcoIcon] hide = true[4]
+curBatCap == 4[4]
+hide [showCurentNumber][4]
+send msg autodemo off
+[4]
+[setTimer] id == 1[4]
+init_gpio_uartrequest irq OK
+[loadfirstswf][4]
+<sysinfo_check_startup_ustatus 2233>=======ret=-1 pc_con=0
+currentSWF == mainmenu.swf[4]
+[__decode_uart] mcu version = 1.14
+Unsupported Tag [77] Metadata
+The font[ID: 3] has layout information
+Unsupported Tag [77] Metadata
+The font[ID: 3] has layout information
+Unsupported Tag [77] Metadata
+power off = The projector will be powered off after 10 seconds.[4]
+hide [showCurentNumber][4]
+[mainMenuInit] currentSel == 1[4]
+load lan == 3[4]
+wifiStat.WIFI_OFF;[4]
+MainSWF.lan == 3[4]
+[INFO][4]
+now is QuickBarFla[4]
+
+****No:0x    0,Write_Zone  0 blk:8,Pge:128*****
+###time:11 ms####
+[__decode_uart] mcu version = 1.14
+[__decode_uart] mcu version = 1.14
+
+****No:0x    1,Write_Zone  0 blk:8,Pge:132*****
+###time:398 ms####
+
+****No:0x    2,Write_Zone  0 blk:8,Pge:136*****
+###time:10 ms####
+
+****No:0x    3,Write_Zone  0 blk:8,Pge:140*****linux
+###time:11 ms####
+[checkActiveTimer] activity time out[4]
+[startInfo] mode == 1[4]
+[startInfo] str length = 0![4]
+MainSWF[standby]!!![4]
+[stopInfo][4]
+
+****No:0x    4,Write_Zone  0 blk:8,Pge:144*****
+###time:515 ms####
+sys_cfg_data.power_sleep_mode=0
+INFO[multialarm.c-665]:now is in RTC_DC_MODE
+INFO[multialarm.c-866]:tmpminstart is 1441
+INFO[multialarm.c-868]:tmpminstart is 1441
+ERROR[multialarm.c-894]:no alarm is before!!!!!
+INFO[multialarm.c-676]:now is in EXT_DC_MODE,board power on is 60
+INFO[multialarm.c-723]:power state:standby mem
+
+
+PM: Syncing filesystems ... done.
+Freezing user space processes ... (elapsed 0.00 seconds) done.
+Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+ changed  Suspending console(s) (use no_console_suspend to debug)
+suspend 2d graphics
+lcm suspend
+standby_info.func_addr:83e5e000 standby_info.func_size:1e50
+mode:11003
+ddr_test_addr:83c09000
+restore system
+9600 div=80305650,hc
